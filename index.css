@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 25px;
+
+    background-color: rgba(248, 85, 156, 0.865);
+     color: rgb(250, 249, 252);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#cookiecounter {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+#cookiebtn {
+    background-color: transparent;
+    border: none;
+}
+
+#cookiebtn:focus {
+    outline: none;
+    border: none;
+}
+.Options {
+    padding: 1.2em;
+    background-color: rgb(249, 249, 112);
+    box-shadow: 0 0 5px rgb(246, 241, 241);
+    margin: 0.5em;
+    border: none;
+    border-radius: 0.5em;
+    font-size: 1em;
+    color: blue;
+    font-weight: bold;
+}
