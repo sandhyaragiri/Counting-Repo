@@ -2,12 +2,18 @@ const button = document.querySelector("#cookiebtn");
 const Counter = document.querySelector("#cookiecounter");
 const counterSecs = document.querySelector("#counterSec");
 let countCookie = 0;
+let cookieSeconds = 0;
 Counter.innerText = countCookie;
-button.addEventListener("click", counterClick);
-function counterClick(){
+button.addEventListener("click", function(){
   countCookie++;
   Counter.innerText = countCookie;
-}
+});
+
+//perseconds
+setInterval(()=>{
+  cookieSeconds ++;
+  Counter.innerText = cookieSeconds;
+}, 1000);
 
 button.addEventListener("click", cookieScale);
 function cookieScale(){
